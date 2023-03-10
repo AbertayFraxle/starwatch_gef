@@ -4,12 +4,16 @@
 
 namespace gef
 {
+	// Forward declaration
+	class Vector2;
 class Vector4
 {
 public:
 
 	Vector4();
 	~Vector4();
+	Vector4(const gef::Vector2);
+	Vector4(const float new_x, const float new_y);
 	Vector4(const float new_x, const float new_y, const float new_z);
 	Vector4(const float new_x, const float new_y, const float new_z, const float new_w);
 

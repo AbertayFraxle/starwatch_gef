@@ -1,3 +1,5 @@
+#include <maths/vector2.h>
+
 namespace gef
 {
 
@@ -7,6 +9,22 @@ namespace gef
 
 	inline Vector4::~Vector4()
 	{
+	}
+
+	inline Vector4::Vector4(const gef::Vector2 new_x_and_y)
+	{
+		values_[0] = new_x_and_y.x;
+		values_[1] = new_x_and_y.y;
+		values_[2] = 0.0f;
+		values_[3] = 0.0f;
+	}
+
+	inline Vector4::Vector4(const float new_x, const float new_y)
+	{
+		values_[0] = new_x;
+		values_[1] = new_y;
+		values_[2] = 0.0f;
+		values_[3] = 0.0f;
 	}
 
 	inline Vector4::Vector4(const float new_x, const float new_y, const float new_z)
