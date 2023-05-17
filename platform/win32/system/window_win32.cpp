@@ -44,7 +44,7 @@ hwnd_(NULL)
 	hinstance_ = hinstance;
 
 	// Give the application a name.
-	application_name_ = "Framework Application";
+	application_name_ = "Station Sentinels";
 
 	// Setup the windows class with default settings.
 	WNDCLASSEX wc;
